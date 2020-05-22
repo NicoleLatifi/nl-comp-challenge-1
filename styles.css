@@ -16,6 +16,7 @@
 .row {
   display: flex;
   width: 100%;
+  margin-bottom: 5px;
   border: solid blue;
 }
 
@@ -26,12 +27,20 @@
   padding: 10px;
 }
 
-#top-right-idk-what-to-call {
+#menu {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
   border: solid red;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  padding-right: 10px;
+  border: solid mediumorchid;
 }
 
 #h1 {
@@ -40,4 +49,12 @@
   grid-row-start: 2;
   grid-row-end: 3;
   border: solid red;
+}
+
+h1 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+  padding-right: 10px;
+  border: solid mediumorchid;
 }
