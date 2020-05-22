@@ -16,8 +16,22 @@
 .row {
   display: flex;
   width: 100%;
-  margin-bottom: 5px;
   border: solid blue;
+}
+
+.row-right {
+  display: flex;
+  /* justify-content: flex-end; */
+  padding-right: 10px;
+  border: solid blue;
+}
+
+.banner-bottom {
+  margin-bottom: 5px;
+}
+
+.banner-top {
+  margin-top: 5px;
 }
 
 .navigation-item {
@@ -32,14 +46,18 @@
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
+  display: flex;
+  justify-content: flex-end;
   border: solid red;
 }
 
-.menu {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 5px;
-  padding-right: 10px;
+.menu-item {
+  border: solid mediumorchid;
+  margin-right: 5px;
+  padding: 10px;
+}
+
+.menu-icon {
   border: solid mediumorchid;
 }
 
@@ -54,7 +72,6 @@
 h1 {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 5px;
   padding-right: 10px;
   border: solid mediumorchid;
 }
