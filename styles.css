@@ -1,6 +1,9 @@
+
+/* ~~~~~~~~~~~~~~ BANNER LAYOUT ~~~~~~~~~~~~~~~~ */
 #banner-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 #site-navigation {
@@ -10,35 +13,7 @@
   grid-row-end: 3;
   display: flex;
   align-items: flex-end;
-  border: solid blue;
-}
-
-.row {
-  display: flex;
-  width: 100%;
-  border: solid blue;
-}
-
-.row-right {
-  display: flex;
-  /* justify-content: flex-end; */
-  padding-right: 10px;
-  border: solid blue;
-}
-
-.banner-bottom {
-  margin-bottom: 5px;
-}
-
-.banner-top {
-  margin-top: 5px;
-}
-
-.navigation-item {
-  border: solid pink;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
+  /* border: solid blue; */
 }
 
 #menu {
@@ -48,19 +23,7 @@
   grid-row-end: 2;
   display: flex;
   justify-content: flex-end;
-  border: solid red;
-}
-
-.menu-item {
-  border: solid mediumorchid;
-  margin-right: 5px;
-  padding: 10px;
-}
-
-.menu-icon {
-  width: 20px;
-  height: 20px;
-  border: solid mediumorchid;
+  /* border: solid red; */
 }
 
 #h1 {
@@ -68,12 +31,104 @@
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: solid red;
+  /* border: solid red; */
 }
 
+@media screen and (max-width: 70em) {
+  #banner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #site-navigation {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: flex-end;
+    /* border: solid blue; */
+  }
+
+  #menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: flex-end;
+    /* border: solid red; */
+  }
+
+  #h1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* border: solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ~~~~~~~~~~~~~~ STYLING ~~~~~~~~~~~~~~~~ */
+.banner-bottom {
+  margin-bottom: 5px;
+}
+
+.banner-top {
+  margin-top: 5px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  /* border: solid mediumorchid; */
+}
+
+/* ~~~~~~~~~~~~~~ SITE NAVIGATION ~~~~~~~~~~~~~~~~ */
+ul {
+  list-style-type: none;
+}
+
+.navigation-row {
+  display: flex;
+  width: 100%;
+  /* border: solid blue; */
+}
+
+.navigation-item {
+  /* border: solid pink; */
+  margin-right: 10px;
+}
+
+.menu-item {
+  /* border: solid mediumorchid; */
+}
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  /* border: solid blue; */
+}
+
+/* ~~~~~~~~~~~~~~ TITLE ~~~~~~~~~~~~~~~~ */
 h1 {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
-  border: solid mediumorchid;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-size: 2em;
+  /* border: solid mediumorchid; */
+}
+
+@media screen and (max-width: 70em) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
 }
