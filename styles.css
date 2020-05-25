@@ -5,6 +5,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   width: 1200px;
+  height: 200px;
   margin: auto;
   background-color: #181a1b;
 }
@@ -20,13 +21,15 @@
 }
 
 #menu {
+  height: 50px;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
   justify-content: flex-end;
-  /* border: solid red; */
+  align-content: flex-start;
+  border: solid red;
 }
 
 #h1 {
@@ -182,20 +185,23 @@ ul {
 }
 
 .navigation-item {
-  /* border: solid pink; */
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 40px;
   color: ghostwhite;
 }
 
 /* ~~~~~~~~~~~~~~ MENU ~~~~~~~~~~~~~~~~ */
 .menu-item {
   filter: invert(.5);
+  margin: auto;
   /* border: solid mediumorchid; */
 }
 
 .menu-row {
+  width: 160px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: 10px;
   border: solid white;
 }
