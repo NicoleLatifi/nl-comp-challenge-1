@@ -4,8 +4,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin-right: 8em;
-  margin-left: 8em;
+  width: 1200px;
+  margin: auto;
+  background-color: #181a1b;
 }
 
 #site-navigation {
@@ -179,6 +180,7 @@ ul {
 .navigation-item {
   /* border: solid pink; */
   margin-right: 10px;
+  color: ghostwhite;
 }
 
 /* ~~~~~~~~~~~~~~ MENU ~~~~~~~~~~~~~~~~ */
@@ -200,6 +202,7 @@ h1 {
   margin-right: 10px;
   margin-bottom: 5px;
   font-size: 3em;
+  color: ghostwhite;
   /* border: solid mediumorchid; */
 }
 
@@ -245,7 +248,7 @@ h1 {
 .card {
   width: 280px;
   /* box-shadow: 0 0 2px #fff; */
-  background: white;
+  background: ghostwhite;
   margin: auto;
   /* margin: 2px; */
   /* border: solid orange; */
@@ -317,7 +320,7 @@ h1 {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-content: flex-end;
-  color: white;
+  color: ghostwhite;
   /* margin-top: 16px; */
   margin-right: 16px;
   /* border: solid yellow; */
@@ -327,7 +330,7 @@ h1 {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-content: flex-end;
-  color: white;
+  color: ghostwhite;
   margin-top: 32px;
   margin-right: 16px;
   /* border: solid yellow; */
