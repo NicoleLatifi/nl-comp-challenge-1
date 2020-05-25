@@ -83,6 +83,13 @@
   }
 }
 
+@media screen and (max-width: 60em) {
+
+  #banner-container {
+    width: 632px;
+  }
+}
+
 /* ~~~~~~~~~~~~~~GENERAL STYLING ~~~~~~~~~~~~~~~~ */
 body {
   font-size:16px;
@@ -274,6 +281,26 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 60em) {
+
+  #cards-container-header {
+    width: 632px;
+    height: 100px;
+  }
+
+  #cards-container {
+    width: 632px;
+    height: 1795px;
+  }
+
+  .card-wrapper {
+    width: 564px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
 
