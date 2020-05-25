@@ -29,7 +29,7 @@
   display: flex;
   justify-content: flex-end;
   align-content: flex-start;
-  border: solid red;
+  /* border: solid red; */
 }
 
 #h1 {
@@ -37,14 +37,15 @@
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: solid red;
+  /* border: solid red; */
   display: flex;
   justify-content: flex-end;
   align-content: flex-end;
 }
 
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 78em) {
   #banner-container {
+    width: 916px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -75,7 +76,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    border: solid white;
+    /* border: solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,10 +182,11 @@ ul {
 .navigation-row {
   display: flex;
   width: 100%;
-  border: solid white;
+  /* border: solid white; */
 }
 
 .navigation-item {
+  font-family: "Helvetica";
   margin-left: 10px;
   margin-right: 40px;
   color: ghostwhite;
@@ -198,12 +200,12 @@ ul {
 }
 
 .menu-row {
-  width: 160px;
+  width: 6em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 10px;
-  border: solid white;
+  /* border: solid white; */
 }
 
 /* ~~~~~~~~~~~~~~ TITLE ~~~~~~~~~~~~~~~~ */
@@ -214,14 +216,16 @@ h1 {
   margin-bottom: 20px;
   font-size: 3em;
   color: ghostwhite;
-  border: solid mediumorchid;
+  /* border: solid mediumorchid; */
 }
 
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 78em) {
   h1 {
     display: flex;
     justify-content: center;
-    margin: auto;
+    align-content: flex-end;
+    margin-bottom: 0px;
+    /* margin: auto; */
   }
 }
 
@@ -253,7 +257,24 @@ h1 {
   background-color: gainsboro;
 }
 
-.card-wraper {
+@media screen and (max-width: 78em) {
+
+  #cards-container-header {
+    width: 916px;
+    height: 100px;
+  }
+
+  #cards-container {
+    width: 916px;
+    height: 1365px;
+  }
+
+  .card-wrapper {
+    width: 848px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .card {
@@ -352,18 +373,3 @@ h1 {
   bottom: 20px; */
   color: deepskyblue;
 }
-
-/* .left-card {
-  left-margin: 34px;
-  right-margin: 2px;
-}
-
-.right-card {
-  left-margin: 2px;
-  right-margin: 34px;
-}
-
-.middle-card {
-  left-margin: 2px;
-  right-margin: 2px;
-} */
