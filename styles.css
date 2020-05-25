@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  width: 1200px;
+  height: 200px;
+  margin: auto;
+  background-color: #181a1b;
 }
 
 #site-navigation {
@@ -17,12 +21,14 @@
 }
 
 #menu {
+  height: 50px;
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
   display: flex;
   justify-content: flex-end;
+  align-content: flex-start;
   /* border: solid red; */
 }
 
@@ -32,10 +38,14 @@
   grid-row-start: 2;
   grid-row-end: 3;
   /* border: solid red; */
+  display: flex;
+  justify-content: flex-end;
+  align-content: flex-end;
 }
 
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 78em) {
   #banner-container {
+    width: 916px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -66,16 +76,22 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    /* border: solid red; */
+    /* border: solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
-/* ~~~~~~~~~~~~~~ STYLING ~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~GENERAL STYLING ~~~~~~~~~~~~~~~~ */
+body {
+  font-size:16px;
+  /* margin-right: 8em;
+  margin-left: 8em; */
+}
+
 .banner-bottom {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .banner-top {
@@ -85,7 +101,77 @@
 .icon {
   width: 20px;
   height: 20px;
+  filter: invert(1);
   /* border: solid mediumorchid; */
+}
+
+h2 {
+  font-family: "Helvetica";
+  font-size: 2em;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: "Helvetica";
+  font-size: 2em;
+  font-weight: normal;
+  margin:0;
+  /* border: solid lightblue; */
+}
+
+h4 {
+  font-family: "Helvetica";
+  font-size: 1em;
+  font-weight: normal;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin:0;
+  /* border: solid lightblue; */
+}
+
+h5 {
+  font-family: "Helvetica";
+  font-size: .8em;
+  font-weight: normal;
+  margin:0;
+  margin-top: 16px;
+  /* border: solid lightblue; */
+}
+
+p {
+  font-family: "Helvetica";
+  font-size: .8em;
+  color: gray;
+  margin:0;
+  margin-bottom: 16px;
+  /* border: solid lightblue; */
+}
+
+.shares {
+  margin-left: 34px;
+}
+
+.card-main {
+  height: 270px;
+  margin-left: 16px;
+  margin-right: 16px;
+  /* padding: 0px; */
+}
+
+.link {
+  font-family: "Helvetica";
+  font-size: .8em;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+  : center;
+  padding: 16px;
+  width: 90%;
+  margin: auto;
+  background: gainsboro;
+}
+
+.name {
+  margin-top: 16px;
 }
 
 /* ~~~~~~~~~~~~~~ SITE NAVIGATION ~~~~~~~~~~~~~~~~ */
@@ -96,24 +182,30 @@ ul {
 .navigation-row {
   display: flex;
   width: 100%;
-  /* border: solid blue; */
+  /* border: solid white; */
 }
 
 .navigation-item {
-  /* border: solid pink; */
-  margin-right: 10px;
+  font-family: "Helvetica";
+  margin-left: 10px;
+  margin-right: 40px;
+  color: ghostwhite;
 }
 
 /* ~~~~~~~~~~~~~~ MENU ~~~~~~~~~~~~~~~~ */
 .menu-item {
+  filter: invert(.5);
+  margin: auto;
   /* border: solid mediumorchid; */
 }
 
 .menu-row {
+  width: 6em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-right: 10px;
-  /* border: solid blue; */
+  /* border: solid white; */
 }
 
 /* ~~~~~~~~~~~~~~ TITLE ~~~~~~~~~~~~~~~~ */
@@ -121,29 +213,79 @@ h1 {
   display: flex;
   justify-content: flex-end;
   margin-right: 10px;
-  margin-bottom: 5px;
-  font-size: 2em;
+  margin-bottom: 20px;
+  font-size: 3em;
+  color: ghostwhite;
   /* border: solid mediumorchid; */
 }
 
-@media screen and (max-width: 70em) {
+@media screen and (max-width: 78em) {
   h1 {
     display: flex;
     justify-content: center;
-    margin: auto;
+    align-content: flex-end;
+    margin-bottom: 0px;
+    /* margin: auto; */
   }
 }
 
 /* ~~~~~~~~~~~~~~ CARDS LAYOUT ~~~~~~~~~~~~~~~~ */
 #cards-container {
+  width: 1200px;
+  height: 935px;
+  margin: auto;
+  background-color: gainsboro;
+}
+
+#cards-container-header {
+  width: 1200px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  background-color: gainsboro;
+}
+
+.card-wrapper {
+  width: 1132px;
+  /* height: 867px; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-gap: 4px;
+  margin: auto;
+  background-color: gainsboro;
+}
+
+@media screen and (max-width: 78em) {
+
+  #cards-container-header {
+    width: 916px;
+    height: 100px;
+  }
+
+  #cards-container {
+    width: 916px;
+    height: 1365px;
+  }
+
+  .card-wrapper {
+    width: 848px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .card {
-  border: solid orange;
+  width: 280px;
+  /* box-shadow: 0 0 2px #fff; */
+  background: ghostwhite;
+  margin: auto;
+  /* margin: 2px; */
+  /* border: solid orange; */
 }
+
 
 .first-background-img {
   background-image: url("./assets/dimitry-kooijmans-2eRHP71tkRY-unsplash.jpg");
@@ -189,29 +331,45 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  /* padding-left: 1em;
+  padding-right: 1em; */
+  width: 280px;
+  height: 157.5px;
   /* border: solid olive; */
 }
 
 .next-icon {
   grid-area: 1 / 1 / 3 / 2;
-  width: 50px;
-  height: 50px;
+  margin-left: 16px;
+  margin-top: 16px;
+  width: 30px;
+  height: 30px;
   filter: invert(1);
-  border: solid blue;
+  /* border: solid blue; */
 }
 
 .card-top-text {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-content: flex-end;
-  color: white;
-  border: solid yellow;
+  color: ghostwhite;
+  /* margin-top: 16px; */
+  margin-right: 16px;
+  /* border: solid yellow; */
 }
 
 .card-top-number {
-  grid-area: 2 / 2 / 3 / 3;
+  grid-area: 1 / 2 / 2 / 3;
   display: flex;
   justify-content: flex-end;
-  color: white;
-  border: solid yellow;
+  color: ghostwhite;
+  margin-top: 32px;
+  margin-right: 16px;
+  /* border: solid yellow; */
+}
+
+.card-bottom-number {
+  /* position: absolute;
+  bottom: 20px; */
+  color: deepskyblue;
 }
