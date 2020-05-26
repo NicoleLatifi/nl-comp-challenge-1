@@ -29,7 +29,6 @@ This is a solo project completed over one week during Module 1 at Turing School 
 
 ## In Action
 
-![./assets/four-columns-two.rows.png]
 
 ## Icon and Image Credits
 
